@@ -79,11 +79,13 @@
   .sbtn.solid:hover{background:var(--ink)}
   .pdfframe{width:100%;height:620px;border:0;border-top:1px solid var(--border);background:#525659}
   @media(max-width:640px){.pdfframe{height:74vh}}
-  .gal{margin-top:44px;display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-  @media(max-width:640px){.gal{grid-template-columns:1fr}}
-  .gal figure{margin:0;background:var(--card);border:1px solid var(--border);overflow:hidden}
-  .gal img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
-  .gal figcaption{padding:13px 16px;font-size:.75rem;color:var(--muted)}
+  .docnote{margin-top:22px;font-size:.8rem;color:var(--muted);font-style:italic}
+  .galhead{margin-top:80px}
+  .gal{margin-top:34px;display:flex;flex-direction:column;gap:26px;align-items:center}
+  .gal figure{margin:0;width:100%;max-width:940px;background:var(--card);border:1px solid var(--border);overflow:hidden}
+  .gal figure.portrait{max-width:500px}
+  .gal img{width:100%;height:auto;display:block}
+  .gal figcaption{padding:14px 18px;font-size:.8rem;color:var(--muted)}
   footer{background:var(--navy);color:var(--cream)}
   .footgrid{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap;padding:70px 0 0}
   footer h3{font-size:clamp(1.8rem,3vw,2.4rem);color:var(--cream);margin-top:20px}
@@ -189,12 +191,16 @@
         <iframe class="pdfframe" src="deck.pdf#view=FitH" title="Advisory Deck" loading="lazy"></iframe>
       </div>
     </div>
+    <p class="docnote reveal">Shared as a professional work sample.</p>
 
-    <div class="gal">
-      <figure class="reveal"><img src="deckcover.png" alt="Opening slide of the advisory presentation" loading="lazy" /><figcaption>Opening of the advisory presentation at ClearVision Ventures.</figcaption></figure>
-      <figure class="reveal"><img src="deckreco.png" alt="Closing recommendation slide" loading="lazy" /><figcaption>Closing recommendation: what to build, when to spend, and where the value lies.</figcaption></figure>
+    <div class="galhead">
+      <p class="eyebrow reveal">Documentation</p>
+      <h2 class="big reveal">From the engagement</h2>
     </div>
-    <p class="lead-p reveal" style="margin-top:24px;font-size:.8rem;color:var(--muted);font-style:italic">Shared as a professional work sample.</p>
+    <div class="gal">
+      <figure class="portrait reveal"><img src="presenting.jpg" alt="Yabes Bolas presenting the research at ClearVision Ventures" loading="lazy" /><figcaption>Presenting the infrastructure research at ClearVision Ventures.</figcaption></figure>
+      <figure class="reveal"><img src="team.jpg" alt="Yabes Bolas with the team at ClearVision Ventures" loading="lazy" /><figcaption>With the team at ClearVision Ventures after the final presentation.</figcaption></figure>
+    </div>
   </div>
 </section>
 
